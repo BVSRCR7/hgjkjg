@@ -25,7 +25,8 @@ function draw(){
     background('#969A97');
     fill('#85CED1');
     stroke('#85CED1');
-    text('Rahul',560,200);
+    textSize(10);
+    text('Rahul',noseX,noseY);
 }
 
 function gotPoses(results)
