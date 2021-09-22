@@ -6,6 +6,7 @@ leftWristX=0;
 function setup(){
     video = createCapture(VIDEO);
     video.size(550,500);
+    video.position(0,200);
 
     canvas = createCanvas(550,550);
     canvas.position(560,200);
@@ -20,11 +21,11 @@ function modelLoaded(){
 
 function draw(){
 
-    document.getElementById("square_sides").innerHTML = "width and height of the square will be = " + difference +"px";
+    document.getElementById("text_size").innerHTML = "size of the text will be = " + difference +"px";
     background('#969A97');
     fill('#85CED1');
     stroke('#85CED1');
-    square(noseX,noseY,difference);
+    text('Rahul',560,200);
 }
 
 function gotPoses(results)
